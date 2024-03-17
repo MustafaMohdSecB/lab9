@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sick Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sick Photo Gallery</h1>
+    </header>
+    <section id="filters">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="architecture">Enginering</button>
+        <!-- Add more categories as needed -->
+    </section>
+    <section id="gallery">
+        <div class="image-wrapper nature">
+            <img src="nature.jpg" alt="Nature 1">
+        </div>
+        <div class="image-wrapper architecture">
+            <img src="archhitecture.jpg" alt="Architecture 1">
+        </div>
+        <!-- Add more images with appropriate categories -->
+    </section>
+
+    <div id="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" src="" alt="">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
